@@ -1,0 +1,87 @@
+// Sass file for second lecture
+
+@use 'normalize.css';
+
+@font-face {
+  font-family: EraserDust;
+  src: url(../../assets/fonts/EraserDust.woff2);
+  font-display: swap;
+}
+
+body {
+  background-color: #b41919;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  max-width: 100%;
+}
+
+.mainContent {
+  height: 100vh;
+  width: 100%;
+  font-family: EraserDust, serif;
+  font-size: 36px;
+  padding: 5%;
+}
+
+.mainContent::before { /* https://coder-coder.com/background-image-opacity */
+  content: "";
+  background-image: url(assets/images/chalk_board.webp);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .4;
+}
+
+.front {
+  position: relative;
+}
+
+footer {
+  position: relative;
+  bottom: 10px;
+  p {
+    font-family: serif;
+    font-size: 18px;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 63em) {
+
+  .logoImage img {
+    width: 300px;
+    height: 117px;
+    max-width: 100%;
+  }
+
+  .footer img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 39em) {
+  .logoImage img {
+    width: 200px;
+    height: 78px;
+    max-width: 100%;
+  }
+
+  .footer img {
+    max-width: 100%;
+  }
+
+  .mainContent {
+    font-size: 26px;
+    padding: 5%;
+  }
+
+  .fontMedium {
+    font-size: 22px;
+  }
+}
