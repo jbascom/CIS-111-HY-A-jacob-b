@@ -343,9 +343,9 @@ template {
   font-display: swap;
 }
 body {
-  background-color: #d02424;
+  background-color: hwb(0 10% 38%);
   text-align: center;
-  color: #000000;
+  color: rgb(2, 2, 2);
 }
 
 img {
@@ -356,7 +356,7 @@ img {
   height: 100vh;
   width: 100%;
   font-family: EraserDust, serif;
-  font-size: 36px;
+  font-size: 24px;
   padding: 5%;
 }
 
@@ -410,12 +410,12 @@ footer p {
   }
 
   .mainContent {
-    font-size: 26px;
+    font-size: 24px;
     padding: 5%;
   }
 
   .fontMedium {
-    font-size: 22px;
+    font-size: 12px;
   }
 }
 
